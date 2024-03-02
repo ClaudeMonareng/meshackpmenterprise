@@ -33,7 +33,6 @@
     --scroll-thumb-color: #70768a;
     --scroll-thumb-hover-color: #454f6b;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -140,6 +139,7 @@ li{
 ::-webkit-scrollbar-thumb:hover{
     background: var(--scroll-thumb-hover-color);
 } */
+
 header{
     z-index: 99999;
     width: 100%;
@@ -1003,6 +1003,7 @@ footer a{
 .footer-container .info{
     margin: 0 0 0 -5em;
 }
+
 /* MEDIA QUERY MAX-WIDTH WITH 1070px */
 
 @media screen and (max-width: 1070px){
@@ -1175,6 +1176,7 @@ footer a{
 /* MEDIA QUERY MAX-WIDTH 730px */
 
 @media screen and (max-width:730px){
+    
     body{
         margin: 5rem 0 0 0;
     }
