@@ -73,6 +73,11 @@ li{
     opacity: 0;
     transition: .5s ease;
 }
+#registration-successful{
+    background-color: #46f436;
+    padding: 2em;
+    margin: 2em 12em;
+}
 .scrollToTop-btn.active{
     right: 20px;
     pointer-events: all;
