@@ -1279,13 +1279,22 @@ footer a{
 
     /* FOOTER */
 
-    .about{
-        /* background-color:#46f436; */
-        margin: auto auto;
+    .footer-container .about{
+        margin: 1em 3em 1em 8em;
         padding: auto auto
     }
-    .about h2, .about p{
-        /* background-color:chocolate; */
+    .footer-container .about h2,
+    .footer-container .about p{
         padding: auto 1em 1em 3em;
+    }
+    .footer-container .follow h3{
+        /* background-color:rgb(87, 173, 0); */
+        margin-left: -9em;
+    }
+    .footer-container
+    .footer-container .follow{
+        /* background-color:coral; */
+        margin-left: 1em;
+        padding-left: 1em;
     }
 }
