@@ -1278,13 +1278,14 @@ footer a{
     }
 
     /* FOOTER */
+
     .about{
-        background-color:#46f436;
+        /* background-color:#46f436; */
         margin: auto auto;
         padding: auto auto
     }
     .about h2, .about p{
-        background-color:chocolate;
+        /* background-color:chocolate; */
         padding: auto 1em 1em 3em;
     }
 }
