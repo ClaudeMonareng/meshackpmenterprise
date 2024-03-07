@@ -364,7 +364,7 @@ header.sticky .nav-bar{
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about-info .deescription h4{
+.about-info .description h4{
     font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 10px;
@@ -978,7 +978,6 @@ footer a{
     align-items: center;
     flex-direction: column;
 }
-
 .footer-container .follow{
     margin: 0 -3.8em 0 0;
 }
@@ -1226,7 +1225,7 @@ footer a{
         font-size: .8rem;
     }
 
-    /* OUR TEAM */
+    /* OUR TEAM WITH SWIPER*/
 
     .team-img{
         width: 250px;
@@ -1273,7 +1272,6 @@ footer a{
         font-size: 3em;
     }
     .swiper-pagination-bullet, .swiper-pagination-bullet-active{
-        /* background: var(--second-color); */
         margin: 2em auto auto auto;
     }
 
@@ -1288,14 +1286,12 @@ footer a{
         padding: auto 1em 1em 3em;
     }
     .footer-container .follow h3{
-        /* background-color:rgb(87, 173, 0); */
         margin-left: -9em;
     }
     .footer-container .follow ul{
         margin-left: -9em;
     }
     .footer-container .follow{
-        /* background-color:coral; */
         margin-left: 1em;
         padding-left: 1em;
     }
