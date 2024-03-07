@@ -1291,10 +1291,15 @@ footer a{
         /* background-color:rgb(87, 173, 0); */
         margin-left: -9em;
     }
-    .footer-container
+    .footer-container .follow ul{
+        margin-left: -9em;
+    }
     .footer-container .follow{
         /* background-color:coral; */
         margin-left: 1em;
         padding-left: 1em;
+    }
+    .footer-copyright p{
+        margin-left: -1em;
     }
 }
