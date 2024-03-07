@@ -1220,9 +1220,11 @@ footer a{
     .contact-card .title{
         font-size: .6rem;
         line-height: 40px;
+        padding-left: 5em;
     }
     .contact-card .contact-btn .btn{
         font-size: .8rem;
+        margin-left: 3.5em;
     }
 
     /* OUR TEAM WITH SWIPER*/
