@@ -1281,15 +1281,21 @@ footer a{
         margin: 1em 3em 1em 8em;
         padding: auto auto
     }
-    .footer-container .about h2,
-    .footer-container .about p{
+    .footer-container .about h2{
         padding: auto 1em 1em 3em;
     }
+    .footer-container .about p{
+        margin-left: -1.5em;
+    }
+    .footer-container .info ul,
+    .footer-container .info h3{
+        margin-left: 4em;
+    }
     .footer-container .follow h3{
-        margin-left: -9em;
+        margin-left: -6em;
     }
     .footer-container .follow ul{
-        margin-left: -9em;
+        margin-left: -6em;
     }
     .footer-container .follow{
         margin-left: 1em;
