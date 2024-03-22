@@ -10,6 +10,16 @@
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  <!--check back-->
         <script src="http://unpkg.com/scrollreveal"></script>  <!--check back-->
+        
+        <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+                (function(){
+                emailjs.init("PKc4wWbF2gx37kBpl");
+            })();
+        </script> -->
+
     </head>
     <body>
 
@@ -405,13 +415,13 @@
                                     <h3>School Website Development</h3>
                                     <span>School Invade</span>
                                 </div>
-                                <img src="images/school-websites4.jpg" alt="">
+                                <img src="images/school.jpg" alt="">
                             </div>
                             <div class="portfolio-modal flex-center">
                                 <div class="portfolio-modal-body">
                                     <i class="fas fa-times portfolio-close-btn"></i>
                                     <h3>School Invade</h3>
-                                    <img src="images/school-websites4.jpg" alt="Work anywhere">
+                                    <img src="images/school.jpg" alt="Work anywhere">
                                     <p><a href="https://claudemonareng.github.io/isikhalisezwe/public/index.html" class="button">Dare to be Great <i class="fas fa-download"></i></a><br>A School website development project that aims to target high schools in Johannesburg, Newcastle and Utrech</p>
                                 </div>
                             </div>
@@ -610,16 +620,17 @@
                     </div>
                     <div class="contact-right">
                         <p>We are always open to discussing product <br><span> design work or partnerships.</span></p>
-                        <form action="" class="contact-form">
+                        
+                        <form action="form-handler.php" class="contact-form" method="POST">
                             <div class="first-row">
-                                <input type="text" placeholder="Name">
+                                <input type="text" name="name" id="name" placeholder="Name">
                             </div>
                             <div class="second-row">
-                                <input type="email" placeholder="Email">
-                                <input type="text" placeholder="Subject">
+                                <input type="email" name="email" id="email" placeholder="Enter email">
+                                <input type="text" name="subject"  id="subject" placeholder="Subject">
                             </div>
                             <div class="third-row">
-                                <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                                <textarea name="message" name="message" id="message" rows="7" placeholder="Write Message"></textarea>
                             </div>
                             <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i> </button>
                         </form>
@@ -664,6 +675,7 @@
         </footer>
 
         <!-- External Script -->
+
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->

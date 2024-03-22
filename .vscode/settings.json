@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true,
+                "instanceName": "SQLEXPRESS"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "LEHLOHONOLO\\SQLEXPRESS",
+            "username": "LEHLOHONOLO/Lehlohonolo",
+            "database": "msdb"
+        }
+    ]
+}

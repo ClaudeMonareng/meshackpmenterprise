@@ -68,7 +68,7 @@ var swiper = new Swiper(".team-swiper", {
     },
 });
 
-//OUR CLIENTS -SWIPER
+//OUR CLIENTS -SWIPER 
 
 var swiper = new Swiper(".clients-swiper", {
     effect: "coverflow",
@@ -185,3 +185,24 @@ ScrollReveal().reveal('.about .professional-list li', {delay: 500, origin: 'righ
 ScrollReveal().reveal('.skills-description, .services-description, .contact-card, .client-swiper, .contact-left h2', {delay: 700, origin: 'left'});
 ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card', {delay: 800, origin: 'bottom', interval:200});
 ScrollReveal().reveal('footer .group', {delay: 500, origin: 'bottom', interval:200});
+
+// CONTACT FORM
+
+function SendMail(){
+
+    var Params = {
+        name : document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    };
+      
+    emailjs.send('service_hxns5hd', 'template_wwx155a', Params).then(
+        (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+            console.log('FAILED...', error);
+        },
+    );      
+}
