@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    /* main Theme Colors */
+    /* Main Theme Colors */
     --first-color: #0e2431;
     --second-color: #6a59d1;
     --third-color: #777;
@@ -280,6 +280,9 @@ header.sticky .nav-bar{
     position: relative;
     flex-direction: column;
 }
+
+/* ABOUT SECTION */
+
 .about .container .content{
     column-gap: 40px;
     width: 100%;
@@ -341,6 +344,8 @@ header.sticky .nav-bar{
     font-size: var(--small-font-size);
 }
 
+/* OUR SERVICES */
+
 .services .container .content{
     width: 100%;
 }
@@ -358,6 +363,7 @@ header.sticky .nav-bar{
 .service-card{
     background: var(--card-bg-color);
     border-bottom: 3px solid var(--second-color);
+    height: 100%;
     padding: 50px;
     border-radius: 6px;
     box-shadow: var(--box-shadow);
@@ -540,7 +546,7 @@ header.sticky .nav-bar{
     font-size: 1.5em;
 }
 .portfolio-modal-body img{
-    width: 100%;
+    max-width: 100%;
     margin: 20px 0;
     border-radius: 10px;
 }
@@ -600,7 +606,6 @@ header.sticky .nav-bar{
     margin: 20px 0;
 }
 .swiper-wrapper .swiper-slide{
-    /* margin: auto auto 1em 3.5em; */
     display:flex;
 }
 .team-img{
@@ -669,7 +674,7 @@ header.sticky .nav-bar{
 
 .contact .container .content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 .contact-left h2{
@@ -696,6 +701,9 @@ header.sticky .nav-bar{
 }
 .contact-list li span a{
     color: var(--third-color);
+}
+.contact-right{
+    margin-left: 5em;
 }
 .contact-right p{
     color: var(--third-color);
