@@ -25,6 +25,27 @@ window.addEventListener("scroll", ()=>{
     });
 });
 
+// RESPONSIVE NAVIGATION MENU TOGGLE
+
+const menuBtn = document.querySelector(".nav-menu-btn");
+const closeBtn = document.querySelector(".nav-close-btn");
+const navigation = document.querySelector(".navigation");
+const navItems = document.querySelectorAll(".nav-items a");
+
+menuBtn.addEventListener("click", () => {
+    navigation.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+    navigation.classList.remove("active");
+});
+
+navItems.forEach((navItem) => {
+    navItem.addEventListener("click", () => {
+        navigation.classList.remove("active");
+    });
+});
+
 // SERVICES SECTION - MODAL
 
 const serviceModals = document.querySelectorAll(".service-modal");
@@ -87,7 +108,7 @@ var swiper = new Swiper(".team-swiper", {
     },
 });
 
-//OUR CLIENTS -SWIPER 
+// OUR CLIENTS - SWIPER
 
 var swiper = new Swiper(".clients-swiper", {
     effect: "coverflow",
@@ -142,36 +163,15 @@ var swiper = new Swiper(".clients-swiper", {
 //     document.documentElement.scrollTop = 0;
 // });
 
-// RESPONSIVE NAVIGATION MENU TOGGLE
-
-const menuBtn = document.querySelector(".nav-menu-btn");
-const closeBtn = document.querySelector(".nav-close-btn");
-const navigation = document.querySelector(".navigation");
-const navItems = document.querySelectorAll(".nav-items a");
-
-menuBtn.addEventListener("click", () => {
-    navigation.classList.add("active");
-});
-
-closeBtn.addEventListener("click", () => {
-    navigation.classList.remove("active");
-});
-
-navItems.forEach((navItem) => {
-    navItem.addEventListener("click", () => {
-        navigation.classList.remove("active");
-    });
-});
-
 // SCROLL REVEAL ANIMATIONS
 // COMMON REVEAL OPTIONS TO CREATE REVEAL ANIMATIONS
 
-ScrollReveal({ 
-    reset: true,
-    distance: '60px',
-    duration: 2500,
-    delay: 100
-});
+// ScrollReveal({ 
+//     reset: true,
+//     distance: '60px',
+//     duration: 2500,
+//     delay: 100
+// });
 
 // TARGET ELEMENTS AND SPECIFY OPTIONS TO CREATE REVEAL ANIMATIONS
 
@@ -182,7 +182,7 @@ ScrollReveal({
 // ScrollReveal().reveal('.home-img, .about-img', {delay: 500, origin: 'bottom'});
 // ScrollReveal().reveal('.about .description, .contact-right', {delay: 600, origin: 'right'});
 // ScrollReveal().reveal('.about .professional-list li', {delay: 500, origin: 'right', interval:200});
-// ScrollReveal().reveal('.skills-description, .services-description, .contact-card, .client-swiper, .contact-left h2', s{delay: 700, origin: 'left'});
+// ScrollReveal().reveal('.skills-description, .services-description, .contact-card, .client-swiper, .contact-left h2', {delay: 700, origin: 'left'});
 // ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card', {delay: 800, origin: 'bottom', interval:200});
 // ScrollReveal().reveal('footer .group', {delay: 500, origin: 'bottom', interval:200});
 
