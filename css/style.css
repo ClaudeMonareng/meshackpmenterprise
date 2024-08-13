@@ -210,15 +210,15 @@ header.sticky .nav-bar {
 }
 
 .btn {
-  background: var(--second-color);
   color: #fff;
-  font-size: var(--normal-font-size);
   font-weight: 500;
   display: inline-block;
   margin-top: 25px;
   padding: 20px 30px;
   letter-spacing: 1px;
   border-radius: 10px;
+  background: var(--second-color);
+  font-size: var(--normal-font-size);
 }
 
 .btn:hover {
