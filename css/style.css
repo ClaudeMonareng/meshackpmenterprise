@@ -431,12 +431,11 @@ header.sticky .nav-bar {
   width: 543px;
 }
 
-.services-info{
-  /* column-gap: 2em; */
-}
-
 .services-info .description:hover{
   overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: blue yellow;
+  scrollbar-gutter: both-edges;
 }
 
 .services-info .description{
