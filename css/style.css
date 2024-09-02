@@ -159,7 +159,7 @@ li {
 .background2{
   background: linear-gradient(rgba(4, 9, 30, 0.5), 
                               rgba(4, 9, 30, 0.3)), 
-                              url(/images/blockchain.jpg) no-repeat;
+                              url(../images/blockchain.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -716,49 +716,49 @@ header.sticky .nav-bar {
 
 .wrapper .item1{
   animation-delay: calc(30s / 8 *(8 - 1) * -1);
-  background-image: url(/images/kusaselihle.png);
+  background-image: url(../images/kusaselihle.png);
   background-position: center;
   background-size: cover;
 }
 .wrapper .item2{
   animation-delay: calc(30s / 8 *(8 - 2) * -1);
-  background-image: url(/images/logo.png);
+  background-image: url(../images/logo.png);
   background-position: center;
   background-size: cover;
 }
 .wrapper .item3{
   animation-delay: calc(30s / 8 *(8 - 3) * -1);
-  background-image: url(/images/wits.jpg);
+  background-image: url(../images/wits.jpg);
   background-position: center;
   background-size: cover;
 }
 .wrapper .item4{
   animation-delay: calc(30s / 8 *(8 - 4) * -1);
-  background-image: url(/images/bcx.png);
+  background-image: url(../images/bcxv2.png);
   background-position: center;
   background-size: cover;
 }
 .wrapper .item5{
   animation-delay: calc(30s / 8 *(8 - 5) * -1);
-  background-image: url(/images/telkom.png);
+  background-image: url(../images/telkom.png);
   background-position: center;
   background-size: cover;
 }
 .wrapper .item6{
   animation-delay: calc(30s / 8 *(8 - 6) * -1);
-  background-image: url(/images/siphosethu.png);
+  background-image: url(../images/siphosethu.png);
   background-position: center;
   background-size: cover;
 }
 .wrapper .item7{
   animation-delay: calc(30s / 8 *(8 - 7) * -1);
-  background-image: url(/images/conlog.png);
+  background-image: url(../images/conlog.png);
   background-position: center;
   background-size: cover;
 }
 .wrapper .item8{
   animation-delay: calc(30s / 8 *(8 - 8) * -1);
-  background-image: url(/images/joburg.png);
+  background-image: url(../images/joburgv2.png);
   background-position: center;
   background-size: cover;
 }
