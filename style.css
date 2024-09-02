@@ -159,7 +159,7 @@ li {
 .background2{
   background: linear-gradient(rgba(4, 9, 30, 0.5), 
                               rgba(4, 9, 30, 0.3)), 
-                              url(.././images/blockchain.jpg) no-repeat;
+                              url(./images/blockchain.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
