@@ -141,15 +141,15 @@ li {
 }
 
 .button {
-  background: var(--second-color);
   color: #fff;
-  font-size: var(--normal-font-size);
   font-weight: 500;
   display: inline-block;
   margin: 0px 0 5px 160px;
   padding: 5px 15px;
   letter-spacing: 1px;
   border-radius: 10px;
+  background: var(--second-color);
+  font-size: var(--normal-font-size);
 }
 
 .button:hover {
@@ -283,15 +283,28 @@ header.sticky .nav-bar {
 
 .about .container .content {
   column-gap: 40px;
+  max-height: 100%;
   width: 100%;
+  padding: 2em;
 }
 
 .about-img {
   position: relative;
   object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  padding-top: 1em;
 }
 
 .about-img img {
+  max-width: 100%;
+  min-width: 500px;
+  min-height: 410px;
+  max-height: 100%;
+}
+
+.about-info{
   max-width: 100%;
   min-width: 500px;
   min-height: 410px;
@@ -322,12 +335,11 @@ header.sticky .nav-bar {
   border-bottom: 2px solid var(--line-color);
 }
 
-.about-info .professional-list {
+.about-img .professional-list {
   display: flex;
   column-gap: 30px;
 }
-
-.about-info .professional-list .list-item {
+.about-img .professional-list .list-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,24 +347,24 @@ header.sticky .nav-bar {
   margin-bottom: 20px;
 }
 
-.about-info .professional-list .list-item h3 {
+.about-img .professional-list .list-item h3 {
   font-size: 2.3em;
   font-weight: 700;
 }
 
-.about-info .professional-list .list-item .first {
+.about-img .professional-list .list-item .first {
   color: var(--first-variant);
 }
 
-.about-info .professional-list .list-item .second {
+.about-img .professional-list .list-item .second {
   color: var(--second-variant);
 }
 
-.about-info .professional-list .list-item .third {
+.about-img .professional-list .list-item .third {
   color: var(--third-variant);
 }
 
-.about-info .professional-list .list-item span {
+.about-img .professional-list .list-item span {
   color: var(--third-color);
   font-size: var(--small-font-size);
 }
@@ -367,6 +379,7 @@ header.sticky .nav-bar {
 .services .container .content {
   column-gap: 0px;
   min-width: 100%;
+  max-height: 100%;
 }
 
 .services-img {
@@ -391,7 +404,7 @@ header.sticky .nav-bar {
 
 .services-info .description{
   height: 480px;
-  /* min-height: 100%; */
+  min-height: 100%;
   min-width: 100%;
   overflow-y: hidden;
   padding: 0 2rem;
@@ -550,19 +563,29 @@ header.sticky .nav-bar {
 /* GET IN TOUCH */
 
 .get-in-touch {
-  margin-top: 70px;
+  margin: 15vw auto;
+  width: 70rem;;
+  height: 50vh;
+  max-height: 100%;
+  background-image: url(./images/blockchain.jpg);
+  background-position: center;
+  background-size: fill;
 }
 
 .get-in-touch .container .content {
+  position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .get-in-touch .contact-card {
   position: relative;
   width: 90%;
-  background: var(--card-bg-color);
-  box-shadow: var(--box-shadow);
+  background-color:#fff;
   padding: 50px;
+  margin: 3rem;
   border-radius: 10px;
   column-gap: 50px;
 }
