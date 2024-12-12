@@ -1,20 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
+
   /* Main Theme Colors */
+
   --first-color: #0e2431;
   --second-color: #6a59d1;
   --third-color: #777;
 
   /* Variant Colors */
+
   --first-variant: rgb(104, 182, 27);
   --second-variant: #7862f5;
   --third-variant: rgb(184, 82, 235);
 
   /* Hover Colors */
+
   --hover-color: #614fd0;
 
   /* Background Colors */
+
   --body-bg-color: #fefefe;
   --body-bg-color: #fff;
   --modal-bg-color: #fff;
@@ -24,16 +29,20 @@
   --line-color: #d7d7d7;
 
   /* Color Filter */
+
   --color-filter: invert(1);
 
   /* Box Shadow */
+
   --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
 
   /* Font Size */
+
   --small-font-size: 0.9em;
   --normal-font-size: 1em;
 
   /* Scroll Bar Colors */
+
   --scroll-bar-color: #c5cadf;
   --scroll-thumb-color: #70768a;
   --scroll-thumb-hover-color: #454f6b;
@@ -124,6 +133,88 @@ li {
   position: relative;
   flex-direction: column;
 }
+
+/* SUB-CONTENT */
+
+.sub-content{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color:#202020;
+  max-width: 100%;
+}
+
+.sub-content h1, .sub-content h2,
+.sub-content h3, .sub-content p,
+.sub-content li{
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.sub-content h1, .sub-content h2,
+.sub-content h3{
+  color: #614fd0;
+}
+
+.sub-content div ul li{
+  margin: auto 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.sub-content div p{
+  line-height: 2rem;
+}
+
+.sub-content .values ul li{
+  padding-bottom: 1rem;
+}
+
+.sub-content .values ul li span{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* GRID CONTAINER */
+
+.grid-container{
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(auto-fill, auto);
+  justify-content: center;
+  margin-top: 10em;
+}
+
+.grid-item{
+  margin: 1rem;
+}
+
+.grid-item img{
+  height: 100%;
+  width: 100%;
+  margin: 1rem;
+  object-fit: cover;
+}
+
+.item1{
+  grid-row: 1 / 3;
+}
+
+.item2{
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
+}
+
+.item3{
+  grid-column: span;
+  grid-row: 3 / 4;
+}
+
+/* STRATEGIC GOALS */
+
+.strategic-goals{
+  margin: auto 8em;
+}
+
 .btn {
   color: #fff;
   font-weight: 500;
@@ -134,6 +225,7 @@ li {
   border-radius: 10px;
   background: var(--second-color);
   font-size: var(--normal-font-size);
+  text-align: center;
 }
 
 .btn:hover {
@@ -159,7 +251,7 @@ li {
 .background2{
   background: linear-gradient(rgba(4, 9, 30, 0.5), 
                               rgba(4, 9, 30, 0.3)), 
-                              url(./images/blockchain.jpg) no-repeat;
+                              url(./images/key.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -204,6 +296,8 @@ header.sticky .nav-bar {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.8;
+  overflow-wrap: break-word;
+  width: 100;
 }
 
 .nav-items a {
@@ -256,7 +350,8 @@ header.sticky .nav-bar {
   text-align: center;
 }
 
-    /* TYPEWRITER EFFECT */
+/* TYPEWRITER EFFECT */
+
 .home .content h1{
   color: orange
 }
@@ -564,12 +659,9 @@ header.sticky .nav-bar {
 
 .get-in-touch {
   margin: 15vw auto;
-  width: 70rem;;
   height: 50vh;
   max-height: 100%;
-  background-image: url(./images/blockchain.jpg);
-  background-position: center;
-  background-size: fill;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);;
 }
 
 .get-in-touch .container .content {
@@ -584,8 +676,7 @@ header.sticky .nav-bar {
   position: relative;
   width: 90%;
   background-color:#fff;
-  padding: 50px;
-  margin: 3rem;
+  margin: 4rem;
   border-radius: 10px;
   column-gap: 50px;
 }
@@ -893,9 +984,6 @@ header.sticky .nav-bar {
 /* FOOTER */
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: var(--second-color);
   width: 100%;
   margin-top: 50px;
@@ -907,15 +995,19 @@ footer a {
   color: #fff;
 }
 
-.footer-container {
+.footer .footer-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   max-width: 1150px;
 }
 
 .footer-container .about {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin-top: 3em;
 }
 
 .footer-container .about h2 {
@@ -927,9 +1019,27 @@ footer a {
   opacity: 0.8;
 }
 
-.footer-container .about p {
-  font-size: var(--normal-font-size);
-  font-weight: 300;
+.footer-container .about P{
+  font-size:medium;
+}
+
+.footer-container .about h2, p{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-company-info{
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 3em; */
+}
+
+.footer-company-info .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
 }
 
 .footer-container .info h3,
@@ -938,28 +1048,23 @@ footer a {
   font-weight: 500;
 }
 
-.footer-container .info ul {
+.footer-copyright{
   display: flex;
-}
-
-.footer-container .info a {
-  margin: 20px;
-}
-
-.footer-container .follow a {
-  font-size: 1.5em;
-  margin: 20px;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footer-copyright p {
   margin-top: 5em;
   font-size: var(--normal-font-size);
   font-weight: 300;
+  text-align: center;
 }
 
 /* MEDIA QUERY MAX-WIDTH WITH 1070px */
 
 @media screen and (max-width: 1070px) {
+
   .navigation {
     position: fixed;
     width: 100%;
@@ -1030,6 +1135,10 @@ footer a {
   }
 
   /* HOME SECTION */
+
+  .home .content h1{
+    text-align: center;
+  }
 
   .home .home-container .info {
     font-size: 0.85rem;
@@ -1104,7 +1213,41 @@ footer a {
     width: 100%;
   }
 
-  /* GET IN TOUCH */
+  /* GET IN TOUCH SECTION */
+
+  .get-in-touch {
+    margin: 15vw auto;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  }
+  
+  .get-in-touch .container .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .get-in-touch .contact-card {
+    position: relative;
+    width: 100%;
+    background-color:#fff;
+    border-radius: 10px;
+    column-gap: 50px;
+  }
+
+  .contact-card .title {
+    text-transform: uppercase;
+    line-height: 60px;
+    overflow-wrap: break-word;
+    padding: 1.5em;
+  }
+
+  .container .content .contact-card .title h2{
+    overflow-wrap: break-word;
+  }
 
   .get-in-touch .contact-card {
     display: grid;
@@ -1180,6 +1323,7 @@ footer a {
 /* MEDIA QUERY MAX-WIDTH 730px */
 
 @media screen and (max-width: 730px) {
+
   body {
     margin: 5rem 0 0 0;
   }
@@ -1196,34 +1340,14 @@ footer a {
   /* HEADER */
 
   header .nav-bar .logo {
-    min-width: max-content;
+    max-width: max-content;
+    font-size: medium;
   }
 
   /* HOME SECTION */
 
-  .home .home-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .home .home-container .home-img {
-    position: absolute;
-    display: none;
-  }
-
-  .home .home-container .info {
-    font-size: 0.8rem;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-    height: 100%;
-    min-width: fit-content;
-  }
-
-  .home .home-container .info p {
-    min-width: fit-content;
-  }
-
-  .media-icons {
-    margin-bottom: 80px;
+  .home .content h1{
+    text-align: center;
   }
 
   /* ABOUT */
@@ -1237,23 +1361,43 @@ footer a {
     flex-direction: column;
   }
 
-  /* SERVICES */
-
-  /* .services{
-        display: flex;
-        flex-flow: column;
-    }
-
-    .services .container .content{
-        min-width: 100%;
-        margin: 1em 2em;
-    } */
-
   /* GET IN TOUCH SECTION */
 
-  .get-in-touch .contact-card {
-    display: grid;
+  .get-in-touch {
+    margin: 15vw auto;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
   }
+  
+  .get-in-touch .container .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .get-in-touch .contact-card {
+    position: relative;
+    width: 100%;
+    background-color:#fff;
+    border-radius: 10px;
+    column-gap: 50px;
+  }
+
+  .contact-card .title {
+    text-transform: uppercase;
+    line-height: 60px;
+    overflow-wrap: break-word;
+    padding: 1.5em;
+  }
+
+  .container .content .contact-card .title h2{
+    overflow-wrap: break-word;
+  }
+
+  /* CONTACT */
 
   .contact-card .title {
     font-size: 0.6rem;
@@ -1363,6 +1507,13 @@ footer a {
   .footer-container .info ul,
   .footer-container .info h3 {
     text-align: center;
+  }
+
+  .footer-company-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5em;
   }
 
   footer .footer-copyright p {
